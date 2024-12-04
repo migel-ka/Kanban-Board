@@ -1,0 +1,33 @@
+.container {
+  background-color: var(--bg-color);
+  padding: 5px 16px 5px 14px;
+  height: 8vh;
+}
+
+p {
+  font-size: 18px;
+  line-height: 21.09px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: var(--text-color-white);
+}
+
+.containerFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+
+  p {
+    font-size: 18px;
+    line-height: 21.09px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: var(--text-color-white);
+  }
+}
+
+.containerFooterBlock {
+  display: flex;
+  gap: 36px;
+}

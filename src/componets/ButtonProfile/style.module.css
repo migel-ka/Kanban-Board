@@ -1,0 +1,23 @@
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 8px;
+  z-index: 1000;
+  width: 134px;
+  border-radius: 5px;
+  
+  p{
+    color: black;
+  }
+}
+
+.button {
+  border: none;
+  background-color: inherit;
+  padding: 8px 6px;
+}

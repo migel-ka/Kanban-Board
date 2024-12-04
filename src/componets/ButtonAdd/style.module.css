@@ -1,0 +1,24 @@
+.buttonAdd {
+  border: none;
+  font-size: 18px;
+  line-height: 21.09px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: rgba(94, 108, 132, 1);
+  display: flex;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: color 0.3s;
+  height: 29px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.buttonAdd:hover {
+  background-color: var(--text-color-white);
+}
+
+.buttonAdd:active {
+  background-color: var(--bg-color-board-bg);
+  color: var(--text-color-white);
+}

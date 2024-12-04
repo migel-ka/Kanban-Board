@@ -1,0 +1,8 @@
+.container {
+  background-color: var(--bg-color-board-bg);
+  padding: 20px 16px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  height: 84vh;
+}

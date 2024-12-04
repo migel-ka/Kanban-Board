@@ -1,0 +1,30 @@
+.container {
+  background-color: var(--bg-color);
+  padding: 5px 16px 5px 14px;
+  height: 8vh;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 32.81px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: var(--text-color-white);
+  padding: 6px 47px 13px 6px;
+}
+
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerHeaderProfile {
+  display: flex;
+
+  button {
+    border: none;
+    background-color: inherit;
+    padding: 8px 6px;
+  }
+}
