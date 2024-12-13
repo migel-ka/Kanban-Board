@@ -1,29 +1,17 @@
-import { ChangeEvent, FC, useState } from "react";
+import { useState } from "react";
 import style from "./style.module.css";
 
+const NewTask = () => {
+  const [task, setTask] = useState("");
 
-interface Props {
-  onHide: () => void; 
-}
-
-const NewTask: FC<Props> = ({ onHide }) => {
-  const [task, setTask] = useState<string>(""); 
-  const [isVisible, setIsVisible] = useState<boolean>(true); 
-
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setTask(e.target.value); 
+  const handleInputChange = (e: any) => {
+    setTask(e.target.value);
   };
 
-  const handleConfirmClick = () => {
+  const handleClick = () => {
     console.log("Кнопка работает", task);
     setTask("");
-    setIsVisible(false);
-    onHide();
   };
-
-  if (!isVisible) {
-    return null;
-  }
 
   return (
     <div className={style.container}>
@@ -33,7 +21,7 @@ const NewTask: FC<Props> = ({ onHide }) => {
         onChange={handleInputChange}
         placeholder="Введите название задачи"
       />
-      <button onClick={handleConfirmClick}>Добавить новую задачу</button>
+      <button onClick={handleClick}>Добавить новую задачу</button>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-import AVATAR from "../img/user-avatar.png";
+import AVATAR from "../../assets/img//user-avatar.png";
 import ButtonProfile from "../ButtonProfile";
 
 const Header = () => {

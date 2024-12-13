@@ -1,0 +1,29 @@
+.container {
+  background-color: var(--bg-color-board);
+  width: 282px;
+  border-radius: 10px;
+  padding: 12px;
+  height: fit-content;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      font-size: 18px;
+      line-height: 21.09px;
+      text-align: left;
+      text-decoration-skip-ink: none;
+      border-radius: 5px;
+      background-color: var(--text-color-white);
+      padding: 7px 8px 6px 8px;
+      gap: 15px;
+    }
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 21.09px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    margin-bottom: 12px;
+  }
+}

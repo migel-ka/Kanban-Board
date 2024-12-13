@@ -1,8 +1,14 @@
 .container {
   background-color: var(--bg-color-board-bg);
   padding: 20px 16px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   height: 84vh;
+}
+@media (max-width: 1235px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 }

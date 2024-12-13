@@ -1,4 +1,5 @@
-import BoardInput from "../BoardInput";
+import BoardColumn from "../BoardColumn";
+import BoardColumnMain from "../BoardColumnMain";
 import style from "./style.module.css";
 
 interface Task {
@@ -11,10 +12,10 @@ const Board = () => {
 
   return (
     <div className={style.container}>
-      <BoardInput title="Новые" items={items} />
-      <BoardInput title="Подтвержденные" items={items} />
-      <BoardInput title="В процессе" items={items} />
-      <BoardInput title="Завершенные" items={items} />
+      <BoardColumnMain title="Новые" items={items} />
+      <BoardColumn title="Подтвержденные" items={items} />
+      <BoardColumn title="В процессе" items={items} />
+      <BoardColumn title="Завершенные" items={items} />
     </div>
   );
 };

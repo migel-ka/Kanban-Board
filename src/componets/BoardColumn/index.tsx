@@ -12,7 +12,7 @@ interface Props {
   items: Task[];
 }
 
-const BoardInput: FC<Props> = ({ title, items }) => {
+const BoardColumn: FC<Props> = ({ title, items }) => {
   return (
     <div className={style.container}>
       <h2>{title}</h2>
@@ -32,4 +32,4 @@ const BoardInput: FC<Props> = ({ title, items }) => {
   );
 };
 
-export default BoardInput;
+export default BoardColumn;

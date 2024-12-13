@@ -10,8 +10,8 @@
   z-index: 1000;
   width: 134px;
   border-radius: 5px;
-  
-  p{
+
+  p {
     color: black;
   }
 }
@@ -20,4 +20,6 @@
   border: none;
   background-color: inherit;
   padding: 8px 6px;
+  display: flex;
+  align-items: center;
 }

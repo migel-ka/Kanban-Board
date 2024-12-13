@@ -1,5 +1,6 @@
 import { useState } from "react";
 import style from "./style.module.css";
+import BUTTON_MENU from "..//..//assets/img/button_menu.svg";
 
 const ButtonProfile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,20 +19,8 @@ const ButtonProfile = () => {
           transition: "transform 0.3s",
         }}
       >
-        <svg
-          width="12"
-          height="8"
-          viewBox="0 0 12 8"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.415 0.209991L6 4.79499L10.585 0.209991L12 1.62499L6 7.62499L0 1.62499L1.415 0.209991Z"
-            fill="white"
-          />
-        </svg>
+        <img src={BUTTON_MENU} alt="button" />
       </button>
-
       {isOpen && (
         <div className={style.modal}>
           <p>Profile</p>
