@@ -1,6 +1,8 @@
 import { FC } from "react";
 import style from "./style.module.css";
 import NewTask from "../NewTask";
+import { useSelector } from "react-redux";
+import { selectTasks } from "../taskSlice";
 
 interface Task {
   id: number;
@@ -12,19 +14,21 @@ interface Props {
   items: Task[];
 }
 
-const BoardColumnMain: FC<Props> = ({ title, items }) => {
+const BoardColumnMain: FC<Props> = ({ title }) => {
+  const tasks = useSelector(selectTasks); // Получаем список задач из Store
+
   return (
     <div className={style.container}>
       <h2>{title}</h2>
-      {items.length === 0 ? (
+      {tasks.length === 0 ? (
         <ul>
           <li>Нет задач</li>
         </ul>
       ) : (
         <ul>
-          {items.map(item => (
-          <li key={item.id}>{item.title}</li>
-        ))}
+          {tasks.map((t: any, index: any) => (
+            <li key={index}>{t.title}</li> // Отображаем задачи
+          ))}
         </ul>
       )}
       <NewTask />
